@@ -1,4 +1,4 @@
-profile.name="dev"
+profile.name: "dev"
 tracer.property: "I AM THE DEFAULT"
 spring.jpa.database: "MYSQL"
 spring.datasource.platform: "mysql"

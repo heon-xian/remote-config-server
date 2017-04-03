@@ -1,3 +1,4 @@
+profile.name: "default"
 tracer.property: "I AM THE DEFAULT"
 spring.jpa.database: "MYSQL"
 spring.datasource.platform: "mysql"
