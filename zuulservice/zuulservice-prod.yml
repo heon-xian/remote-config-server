@@ -1,13 +1,11 @@
-example.property: "I AM IN THE PROD"
-profile.name: "prod"
-tracer.property: "I AM THE DEFAULT"
-spring.jpa.database: "MYSQL"
-spring.datasource.platform: "mysql"
-spring.jpa.show-sql: "true"
-spring.database.driverClassName: "com.mysql.jdbc.Driver"
-spring.datasource.url: "jdbc:mysql://localhost:3306/sb?useSSL=false"
-spring.datasource.username: "sb"
-spring.datasource.password: "sb"
-spring.datasource.testWhileIdle: "true"
-spring.datasource.validationQuery: "SELECT 1"
-spring.jpa.properties.hibernate.dialect: "org.hibernate.dialect.MySQLDialect"
+zuul.ignored-services: "orgservice-new"
+zuul.prefix:  /api
+zuul.routes.organizationservice: /organization/**
+zuul.routes.licensingservice: /licensing/**
+zuul.routes.authenticationservice: /auth/**
+zuul.sensitiveHeaders: Cookie,Set-Cookie
+zuul.debug.request: true
+#hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 2
+#hystrix.command.licensingservice.execution.isolation.thread.timeoutInMilliseconds: 2
+#licensingservice.ribbon.ReadTimeout: 2
+signing.key: "345345fsdfsf5345"
