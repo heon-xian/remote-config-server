@@ -1,3 +1,4 @@
+example.property: "I AM IN THE DEFAULT"
 profile.name: "default"
 tracer.property: "I AM THE DEFAULT"
 spring.jpa.database: "MYSQL"
